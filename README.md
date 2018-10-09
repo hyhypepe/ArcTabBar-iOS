@@ -1,6 +1,6 @@
 # ArcTabBar-iOS
 
-<img src="demo.png" width="200">
+<img src="demo1.png" width="200">
 
 ## Usage :chart_with_upwards_trend:
 - Just drag and drop all classes in folder /ArcTabBar/arctabbar/ to your project and play. Please make use check target membership in your project.
