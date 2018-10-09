@@ -67,4 +67,26 @@ class ArcTabBar: UIView {
         shapeLayer.lineWidth = 3.0
         self.layer.addSublayer(shapeLayer)
     }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        let touch = touches.first!
+        let location = touch.location(in: self)
+        print("touchesBegan CGPoint = \(location)")
+    }
+    
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        let touch = touches.first!
+        let location = touch.location(in: self)
+        let clickedCirclePosition = getClickedCircle(touchedPoint: location)
+        print("touchesEnded clickedCirclePosition = \(clickedCirclePosition)")
+    }
+    
+    func getClickedCircle(touchedPoint: CGPoint) -> Int {
+        for i in 0..<mSecondaryCircles.count {
+            if mSecondaryCircles[i].hasPoint(forPoint: touchedPoint) {
+                return i
+            }
+        }
+        return -1
+    }
 }
