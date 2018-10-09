@@ -78,6 +78,7 @@ class ArcTabBar: UIView {
         let touch = touches.first!
         let location = touch.location(in: self)
         let clickedCirclePosition = getClickedCircle(touchedPoint: location)
+        delegate?.didClickedCircle(position: clickedCirclePosition)
         print("touchesEnded clickedCirclePosition = \(clickedCirclePosition)")
     }
     
