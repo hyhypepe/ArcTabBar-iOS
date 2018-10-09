@@ -13,6 +13,8 @@
 		B5E145ED216CC23A00AB2842 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5E145EC216CC23A00AB2842 /* Assets.xcassets */; };
 		B5E145F0216CC23A00AB2842 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5E145EE216CC23A00AB2842 /* LaunchScreen.storyboard */; };
 		B5E145FB216CC23A00AB2842 /* ArcTabBarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E145FA216CC23A00AB2842 /* ArcTabBarUITests.swift */; };
+		B5E14608216CC24A00AB2842 /* ArcTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E14606216CC24900AB2842 /* ArcTabBar.swift */; };
+		B5E14609216CC24A00AB2842 /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E14607216CC24900AB2842 /* Circle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		B5E145F6216CC23A00AB2842 /* ArcTabBarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArcTabBarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5E145FA216CC23A00AB2842 /* ArcTabBarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcTabBarUITests.swift; sourceTree = "<group>"; };
 		B5E145FC216CC23A00AB2842 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5E14606216CC24900AB2842 /* ArcTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArcTabBar.swift; sourceTree = "<group>"; };
+		B5E14607216CC24900AB2842 /* Circle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Circle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,7 @@
 		B5E145E4216CC23800AB2842 /* ArcTabBar */ = {
 			isa = PBXGroup;
 			children = (
+				B5E14605216CC24900AB2842 /* arctabbar */,
 				B5E145E5216CC23800AB2842 /* AppDelegate.swift */,
 				B5E145E7216CC23800AB2842 /* ViewController.swift */,
 				B5E145E9216CC23800AB2842 /* Main.storyboard */,
@@ -94,6 +99,15 @@
 				B5E145FC216CC23A00AB2842 /* Info.plist */,
 			);
 			path = ArcTabBarUITests;
+			sourceTree = "<group>";
+		};
+		B5E14605216CC24900AB2842 /* arctabbar */ = {
+			isa = PBXGroup;
+			children = (
+				B5E14606216CC24900AB2842 /* ArcTabBar.swift */,
+				B5E14607216CC24900AB2842 /* Circle.swift */,
+			);
+			path = arctabbar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,7 +212,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5E145E8216CC23800AB2842 /* ViewController.swift in Sources */,
+				B5E14609216CC24A00AB2842 /* Circle.swift in Sources */,
 				B5E145E6216CC23800AB2842 /* AppDelegate.swift in Sources */,
+				B5E14608216CC24A00AB2842 /* ArcTabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
